@@ -15,14 +15,10 @@ function App() {
         <div className="appBody">
           <Sidebar />
 
-     <Routes>
-            <Route path="/mail">
-              <Mail />
-            </Route>
-            <Route path="/">
-              <EmailList />
-            </Route>
-            </Routes>
+          <Routes>
+            <Route path="/mail" exact render={() => <Mail />} />
+            <Route path="/" exact render={() => <EmailList />} />
+          </Routes>
         </div>
       </div>
     </Router>
