@@ -29,9 +29,17 @@
   color: grey;
 }
 
-.headerMiddle>input{
+.headerMiddle > input {
   border: none;
   width: 100%;
   padding: 10px;
+  outline-width: 0;
+  font-size: medium;
+  background-color: transparent;
+}
+
+.headerRight{
+  display: flex;
+  padding-right: 20px;
   
 }

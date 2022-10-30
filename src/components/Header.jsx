@@ -1,11 +1,10 @@
 import React from "react";
 import "./Header.css";
-import { IconButton } from "@mui/material";
+import { Avatar, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import AppsIcon from "@mui/icons-material/Apps";
 import SearchIcon from "@mui/icons-material/Search";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import NotificationsIcon from "@mui/icons-material/Notifications";
 import { ArrowDropDown } from "@mui/icons-material";
 const Header = () => {
   return (
@@ -26,13 +25,13 @@ const Header = () => {
       </div>
       <div className="headerRight">
         <IconButton>
-          <HelpOutlineIcon />
-        </IconButton>
-        <IconButton>
-          <SettingsOutlinedIcon />
-        </IconButton>
-        <IconButton>
           <AppsIcon />
+        </IconButton>
+        <IconButton>
+          <NotificationsIcon />
+        </IconButton>
+        <IconButton>
+          <Avatar />
         </IconButton>
       </div>
     </div>
