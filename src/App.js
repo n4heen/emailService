@@ -16,8 +16,8 @@ function App() {
           <Sidebar />
 
           <Routes>
-            <Route path="/mail" exact render={() => <Mail />} />
-            <Route path="/" exact render={() => <EmailList />} />
+            <Route path="/mail" element={<Mail />} />
+            <Route path="/" element={<EmailList />} />
           </Routes>
         </div>
       </div>
