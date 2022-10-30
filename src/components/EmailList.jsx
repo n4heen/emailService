@@ -8,6 +8,10 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import KeyboardHideIcon from "@mui/icons-material/KeyboardHide";
 import SettingsIcon from "@mui/icons-material/Settings";
+import Section from "./Section";
+import InboxIcon from '@mui/icons-material/Inbox';
+import PeopleIcon from '@mui/icons-material/People';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 const EmailList = () => {
   return (
     <div className="emailList">
@@ -38,6 +42,11 @@ const EmailList = () => {
             <SettingsIcon />
           </IconButton>
         </div>
+      </div>
+      <div className="emailList__sections">
+        <Section Icon={InboxIcon} title="Primary" color='red' selected/>
+        <Section Icon={PeopleIcon} title="Social" color='#1A73E8' />
+        <Section Icon={LocalOfferIcon} title="primary" color='green' />
       </div>
     </div>
   );
